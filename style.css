@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../fonts/8143.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 300px;
+  max-width: 1920px;
+  width: 100%;
+  font-size: 0.94em;
+}
+
+.cv {
+  display: flex;
+}
+
+.cv-first-block {
+  display: block;
+  width: 1%;
+  float: left;
+}
+
+.cv-second-block {
+  width: 100%;
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

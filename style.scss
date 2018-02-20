@@ -1,0 +1,23 @@
+@import 'fonts/font.scss';
+$width: 100%;
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 300px;
+    max-width: 1920px;
+    width: $width;
+    font-size: 0.94em;
+}
+
+.cv {
+    display: flex;
+    &-first-block {
+        display: block;
+        width: $width*0.01;
+        float: left;
+      }
+    &-second-block {
+        width: $width;
+        display: block;
+      }
+}
