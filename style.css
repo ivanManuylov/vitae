@@ -16,14 +16,25 @@ body {
   display: flex;
 }
 
-.cv-first-block {
+.first-block {
   display: block;
-  width: 1%;
+  width: 50%;
   float: left;
 }
 
-.cv-second-block {
-  width: 100%;
+.second-block {
+  width: 50%;
   display: block;
+}
+
+.roundforphoto {
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  background-color: #3d6cb0;
+  border: 14px solid #fff;
+  box-shadow: 0 0 0 1px #3d6cb0;
+  margin-left: 25%;
+  margin-top: 25%;
 }
 /*# sourceMappingURL=style.css.map */
