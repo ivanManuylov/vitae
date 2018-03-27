@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import url(css/fonts.css);
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  /* обнуляем отступы и убираем бордюры */
+  vertical-align: baseline;
+  /* приводим все к одной базовой линии */
+  background: transparent;
+  /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+  font-size: 100%;
+  /* размер шрифта всем одинаковый */ }
+
+body {
+  font-family: "PT Sans";
+  min-width: 320px;
+  max-width: 2480px;
+  width: 100%;
+  height: 100%;
+  font-size: 30.86px;
+  padding-top: 5px; }
+
+.cv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.firstBlock {
+  padding-left: 0;
+  width: 44.354839%;
+  max-width: 44.44444%; }
+
+.secondBlock {
+  width: 55.64516%;
+  max-width: 1380px; }
+
+.info {
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 10%; }
+  .info h1 {
+    font-size: 5.38rem;
+    font-weight: normal;
+    padding: 0;
+    margin: 0; }
+  .info-classfat {
+    line-height: 3.5rem;
+    font-weight: bold;
+    font-size: 5.715625rem;
+    padding: 0;
+    margin: 0; }
+  .info h3 {
+    font-size: 2.4rem;
+    padding: 0;
+    margin: 0;
+    line-height: 7rem; }
+
+.mainPhoto {
+  width: 37%;
+  padding-bottom: 37%;
+  border-radius: 50%;
+  background-color: #3d6cb0;
+  border: 1.2vw solid #fff;
+  box-shadow: 0 0 0 2px #3d6cb0;
+  margin-left: 29%;
+  margin-top: 15%;
+  margin-bottom: 3%; }
+
+.wrapper-left {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: center;
+  margin-left: 10%; }
+
+.wrapper-right {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: center; }
+
+.content {
+  margin: 0% 10%; }
+
+.profi {
+  margin-right: 24px;
+  margin-left: 21px;
+  margin-bottom: 78px;
+  position: relative; }
+  .profi img {
+    position: relative;
+    vertical-align: top;
+    top: 0;
+    left: 0; }
+
+.profi__header {
+  display: block;
+  color: #3d6cb0;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: 3.4rem;
+  font-weight: 900;
+  position: absolute;
+  padding-left: 82px;
+  top: 10px;
+  word-wrap: break-word;
+  max-width: 100%;
+  height: 73px;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1.5;
+  margin: 0px; }
+
+.profi__header::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: url("app/img/profile-icon.png") 100% 100% no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0px;
+  top: 11px;
+  background-position: -383px 0px; }
+
+.profi__line {
+  height: 5px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 60px;
+  background: #3d6cb0;
+  top: 48px;
+  position: relative; }
+
+.profi .content {
+  font-size: 16px;
+  margin-top: 90px;
+  display: block;
+  line-height: 18.6px;
+  letter-spacing: -0.43px; }
+
+.contact-left {
+  background: ivory;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+  width: 60%;
+  margin-left: 10%;
+  font-size: 2rem;
+  color: black; }
+  .contact-left_info_1 {
+    text-transform: uppercase;
+    color: #3d6cb0;
+    font-weight: bold;
+    background: #e6e6e6; }
+  .contact-left_info_2 {
+    background: #e6e6e6; }
+
+.skills {
+  text-transform: uppercase; }
+  .skills-soft {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 2.55rem; }
+
+.education li {
+  list-style: none; }
+
+.education-degree::before {
+  content: '';
+  width: 1.7vw;
+  height: 1.7vw;
+  margin: auto 2% auto 1%;
+  border-radius: 50%;
+  background-color: black; }
+
+.education-degree {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+  .education-degree_master {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3d6cb0; }
+  .education-degree_years {
+    margin-left: 1%; }
+
+.education-university {
+  text-transform: uppercase; }
+
+.education-cont_text {
+  font-size: 24.688px; }

@@ -1,0 +1,15 @@
+@import 'variables.scss';
+$maincolor:#3d6cb0;
+@mixin field($icons,$maincolor){
+@each $icons in $icons{
+  .#{$icons}__line {
+    height: 5px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 60px;
+    background: #3d6cb0;
+    top: 40px;
+    position: relative;
+  }
+}
+}
