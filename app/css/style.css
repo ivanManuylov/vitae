@@ -30,8 +30,7 @@ body {
 .firstBlock {
   width: 750px;
   margin: 130px 100px 100px 95px;
-  max-width: 830px;
-  background-color: #f0eded; }
+  max-width: 830px; }
 
 .secondBlock {
   width: 54%;
@@ -103,7 +102,8 @@ body {
     height: 7px;
     margin-bottom: 5px;
     margin-left: 1.3%;
-    width: 38.5%;
+    margin-right: 7%;
+    width: 60%;
     background: #3d6cb0;
     overflow: hidden;
     box-sizing: border-box; }
@@ -150,10 +150,28 @@ body {
 .skills {
   text-transform: uppercase; }
   .skills-soft {
-    padding: 0;
-    margin: 0;
-    text-align: center;
+    letter-spacing: -1.5px;
+    margin-top: -10px;
+    padding: 0% 45% 10% 32%;
     font-size: 2.55rem; }
+    .skills-soft__creative__items {
+      width: 290%;
+      height: 27px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+      top: -29px;
+      left: -174px; }
+    .skills-soft__creative__item {
+      display: inline-block;
+      vertical-align: center;
+      margin-right: 4px;
+      width: 29px;
+      background-color: #3d6cb0;
+      border-radius: 50%; }
+    .skills-soft__creative__item:nth-child(n+10) {
+      background-color: #f0eded; }
 
 .education li {
   list-style: none; }
