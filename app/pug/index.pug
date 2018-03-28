@@ -72,14 +72,14 @@ html(lang="ru")
             .secondBlock
                 .education
                     .wrapper-right
-                        .education-icon
-                            img(src="img/education-icon.png", alt="education") 
-                        .education__line Education 
-                    ul
+                        img(src="img/education-icon.png", alt="education") 
+                        .wrapper-right__header  Education
+                        .wrapper-right__line  
+                    ul.education-container
                         li.education-cont
                             .education-degree
                                 .education-degree__master master degree 
-                                .education-degree__years // Feb 2011-Jun 2014 
+                                .education-degree__years // Feb 2011 - Jun 2014 
                             .education-university university name 
                             .education-cont__text   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                                 Aenean commodo ligula eget dolor. Aenean massa. 
@@ -89,7 +89,7 @@ html(lang="ru")
                         li.education-cont  
                             .education-degree
                                 .education-degree__master master degree 
-                                .education-degree__years // Feb 2011-Jun 2014 
+                                .education-degree__years // Feb 2011 - Jun 2014 
                             .education-university university name 
                             .education-cont__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                                 Aenean commodo ligula eget dolor. Aenean massa. 
@@ -99,7 +99,7 @@ html(lang="ru")
                         li.education-cont
                             .education-degree
                                 .education-degree__master master degree 
-                                .education-degree__years // Feb 2011-Jun 2014 
+                                .education-degree__years // Feb 2011 - Jun 2014 
                             .education-university university name 
                             .education-cont__text  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                                 Aenean commodo ligula eget dolor. Aenean massa. 
@@ -109,7 +109,7 @@ html(lang="ru")
                         li.education-cont
                             .education-degree
                                 .education-degree__master master degree 
-                                .education-degree__years // Feb 2011-Jun 2014 
+                                .education-degree__years // Feb 2011 - Jun 2014 
                             .education-university university name 
                             .education-cont__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                                 Aenean commodo ligula eget dolor. Aenean massa. 
@@ -119,58 +119,62 @@ html(lang="ru")
                 
                 .experience
                     .wrapper-right
-                        .experience-icon
-                            img(src="img/experience-icon.png", alt="experience") 
-                        .experience__line experience
-                    ul
+                        img(src="img/experience-icon.png", alt="experience")
+                        .wrapper-right__header Experience   
+                        .wrapper-right__line 
+                    ul.experience-container
                         li.experience-cont
                             .experience-company 
                                 .experience-company__name company name 
-                                .experience-company__years // Feb 2011-Jun 2014 
+                                .experience-company__years // Feb 2011 - Jun 2014 
                             .experience-job your job here
-                            .experience-cont__text
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                                Aenean commodo ligula eget dolor. Aenean massa. 
-                                Cum sociis natoque penatibus et magnis dis parturient montes,
-                                nascetur ridiculus mus. 
-                                Donec quam felis, ultricies nec, pellentesque.
+                            .experience-cont__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
                         li.experience-cont
                             .experience-company 
                                 .experience-company__name company name 
-                                .experience-company__years // Feb 2011-Jun 2014 
+                                .experience-company__years // Feb 2011 - Jun 2014 
                             .experience-job your job here
-                            .experience-cont__text
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                                Aenean commodo ligula eget dolor. Aenean massa. 
-                                Cum sociis natoque penatibus et magnis dis parturient montes,
-                                nascetur ridiculus mus. 
-                                Donec quam felis, ultricies nec, pellentesque.
+                            .experience-cont__text  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
                         li.experience-cont
                             .experience-company 
                                 .experience-company__name company name 
-                                .experience-company__years // Feb 2011-Jun 2014 
+                                .experience-company__years // Feb 2011 - Jun 2014 
                             .experience-job your job here
-                            .experience-cont__text
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                                Aenean commodo ligula eget dolor. Aenean massa. 
-                                Cum sociis natoque penatibus et magnis dis parturient montes,
-                                nascetur ridiculus mus. 
-                                Donec quam felis, ultricies nec, pellentesque.
-                
+                            .experience-cont__text  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+
                 .software
+                    mixin softwarePoints(n)
+                        div.software-hard__points
+                            div(class='software-hard__points__'+ n)
                     .wrapper-right
-                        .experience-icon
-                            img(src="img/software-icon.png", alt="software") 
-                        .experience__line software
+                        img(src="img/software-icon.png", alt="software") 
+                        .wrapper-right__header Software
+                        .wrapper-right__line 
                     .software-hard
-                        .software-leftcont   
-                            .software-hard__photoshop Photoshop
-                            .software-hard__illustrator illustrator
-                            .software-hard__indesign indesign
-                        .software-rightcont
-                            .software-hard__dreamviewer dreamviewer
-                            .software-hard__after after effects
-                            .software-hard__html html&ampcss3   
+                        .software-hard__row__1
+                            .software-hard__photoshop   
+                                h4  Photoshop
+                                +softwarePoints(389)
+                            .software-hard__dreamviewer 
+                                h4  dreamviewer
+                                +softwarePoints(354)
+                        .software-hard__row__2
+                            .software-hard__illustrator 
+                                h4  Illustrator
+                                +softwarePoints(300)
+                            .software-hard__after 
+                                h4  after effects
+                                +softwarePoints(342)
+                        .software-hard__row__3
+                            .software-hard__indesign 
+                                h4  Indesign
+                                +softwarePoints(240)
+                            .software-hard__html 
+                                h4  html&ampcss3 
+                                +softwarePoints(389) 
+                            
+                            
+                            
                         
 
     

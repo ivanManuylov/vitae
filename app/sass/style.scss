@@ -3,6 +3,7 @@
 $maincolor:#3d6cb0;
 $globalfont :'PT Sans';
 $width: 100%;
+$helpcolor:#f0eded;
 $sizeoffont:30.86px;
 // $skills: (creative,teamwork,innovate,communication);
 $pointsOfSkills: (1,2,3,4,5,6,7,8,9,10,11,12);
@@ -67,22 +68,28 @@ body {
   width: $width;
   height:$width;
   font-size: $sizeoffont;
-  padding-top:5px;
-  
 }
 .cv {
-  display: flex;
-  flex-direction:row;
-  flex-wrap: wrap;
+  display: inline-block;
+  background-color: forestgreen;
+  width:100%;
+  height:100%;
 }   
 .firstBlock {
   width:750px;
-  margin:130px 100px 100px 95px;
+  margin:130px 0px 0px 95px;
   max-width:830px;
+  float: left;
+  padding-top:5px;
+  background-color: chartreuse;
 }
 .secondBlock {
-  width:$width - 46%;
+  float:left;
+  width:972px;
   max-width:1380px;
+  margin:0;
+  margin:116px 0 100px auto;
+  background-color: #fff;
 }
 .mainPhoto {
   // 452 px/2 - radius of round for image ?
@@ -166,11 +173,42 @@ body {
     }
   }
   &-right {
-    width:80%;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-self: center;
+    width:100%;
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: flex-start;
+    
+    img {
+      height: 11.8%;
+      width:11.8%;
+      background-position: 50% 50%;
+      background-color: #fff;
+    } 
+    &__header {
+      color: #3d6cb0;
+      text-transform: uppercase;
+      font-size: 3.7rem;
+      font-weight: bold;
+      white-space:nowrap;
+      word-wrap: break-word;
+      min-width: fit-content;
+      max-width: 400px;
+      box-sizing: border-box;
+      letter-spacing: 3px;
+      margin: 0;
+      margin-left:3%;
+      padding-bottom: 5px;
+      padding-right:10px;
+    }
+    &__line {
+      height: 8px;
+      margin-left:1%;
+      width: 100%;
+      background: #3d6cb0;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
   }
 }
 .content {
@@ -215,8 +253,7 @@ body {
   text-transform:uppercase;
   &-soft {
     letter-spacing: -1.7px;
-    margin:0 22% 0px 45px;
-    background-color: cyan;
+    margin:0 22% 0 45px;
     padding-top: 10px;
     text-align:center;
     font-size: 2.55rem;
@@ -234,50 +271,198 @@ body {
     }
   }
 }
-.education{
-  
+// правый блок
+.education {
   li {
     list-style:none;
   }
+  &-container{  //обёртка для выравнивания
+    padding-left:8.3%;
+    padding-bottom: 37px;
+  }
+  &-cont{
+    padding-top: 5px;
+    padding-right:30px;
+    padding-bottom:10px;
+    &__text {
+      font-size:$sizeoffont*0.78;
+      padding-left:3px;
+      padding-top:5px;
+      line-height: 1.85rem;
+      word-spacing: -2px;
+    }
+  }
   &-degree::before {
     content: '';
-    width: 1.7vw;
-    height: 1.7vw;
-    margin: auto 2% auto 1%;
+    display:flex;
+    position: absolute;
+    left:-62px;
+    top:13px;
+    align-items:center;
+    width: 3.5%;
+    padding-bottom: 3.5%;
     border-radius: 50%;
     background-color: black;
   }
   &-degree {
+    position: relative;
     display:flex;
     flex-direction:row;
     justify-content: flex-start;
+    align-items: center;
     flex-wrap: wrap;
-    &_master  {
-    font-size:2.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    @include color($maincolor);
+    height: fit-content;
+    &__master  {
+      font-size:2.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      word-spacing: -5px;
+      text-transform: uppercase;
+      @include color($maincolor);
     }
-    &_years {
-      margin-left:1%;
+    &__years {
+      margin-left:2%;
+      letter-spacing: -1px;
+      font-size: 2.5rem;
     }
   }
   &-university {
     text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: -1.5px;
   }
-  &-cont{
-    &_text {
-      font-size:$sizeoffont*0.8;
-    }
-  }
-}
-.experience {
   
 }
-.software {
+.experience {
  
- 
+  li {
+    list-style: none;
+  }
+  &-container {
+    @extend .education-container;
+    padding-bottom: 62px;
+  }
+  &-cont {
+    @extend .education-cont;
+    padding-top:28px;
+    padding-bottom:11px;
+    &__text {
+      @extend .education-cont__text;
+      margin-bottom: -24.5px;
+    }
+  }
+  &-company {
+    @extend .education-degree;
+    ::before {
+      top:11px;
+    }
+    &__name {
+      @extend .education-degree__master;
+      color: black;
+      letter-spacing: 1.5px;
+      word-spacing: -4.5px;
+    }
+    &__years {
+      @extend .education-degree__years;
+      
+    }
+  }
+  &-job {
+    @extend .education-university;
+    letter-spacing: -1px;
+    word-spacing: 0px;
+  }  
 }
+.rect{
+  display: inline-block;
+  margin-top:0px;
+  height: 34px;
+  background-color: $maincolor;
+}
+.software {
+  &-hard {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    padding-left: 11px;
+    padding-right:4px;
+    &__row__1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      h4 {
+        font-weight: normal;
+        text-transform: uppercase;
+        padding:0;
+        margin:0;
+        margin-bottom:20px;
+        margin-top:32px;
+        letter-spacing: -1px;
+        font-size:2.5rem;
+      }
+    }
+    &__row__2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      h4 {
+        font-weight: normal;
+        text-transform: uppercase;
+        padding:0;
+        margin:0;
+        margin-bottom:17px;
+        margin-top:31px;
+        letter-spacing: -1px;
+        font-size:2.5rem;
+      }
+    }
+    
+    &__row__3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      h4 {
+      font-weight: normal;
+      text-transform: uppercase;
+      padding:0;
+      margin:0;
+      margin-bottom:12px;
+      margin-top:31px;
+      letter-spacing: -1px;
+      font-size:2.5rem;
+      } 
+    }
+    &__points {
+      display:flex;
+      text-align: left;
+      height: 34px;
+      padding:0;
+      background-color: #f0eded;
+      width: 426px;
+      &__389{
+        @extend .rect;
+        width: 389px;
+      }
+      &__300 {
+        @extend .rect;
+        width: 300px;
+      }
+      &__240{
+        @extend .rect;
+        width: 240px;
+      }
+      &__342 {
+        @extend .rect;
+        width: 263px;
+      }
+      &__354 {
+        @extend .rect;
+        width: 354px;
+      }
+    }
+  }
+} 
+ 
 
 // @each  $icons in $icons{
   

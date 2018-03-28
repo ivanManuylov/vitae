@@ -19,22 +19,29 @@ body {
   max-width: 2480px;
   width: 100%;
   height: 100%;
-  font-size: 30.86px;
-  padding-top: 5px; }
+  font-size: 30.86px; }
 
 .cv {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
+  display: inline-block;
+  background-color: forestgreen;
+  width: 100%;
+  height: 100%; }
 
 .firstBlock {
   width: 750px;
-  margin: 130px 100px 100px 95px;
-  max-width: 830px; }
+  margin: 130px 0px 0px 95px;
+  max-width: 830px;
+  float: left;
+  padding-top: 5px;
+  background-color: chartreuse; }
 
 .secondBlock {
-  width: 54%;
-  max-width: 1380px; }
+  float: left;
+  width: 972px;
+  max-width: 1380px;
+  margin: 0;
+  margin: 116px 0 100px auto;
+  background-color: #fff; }
 
 .mainPhoto {
   width: 42%;
@@ -109,11 +116,38 @@ body {
     box-sizing: border-box; }
 
 .wrapper-right {
-  width: 80%;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-self: center; }
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start; }
+  .wrapper-right img {
+    height: 11.8%;
+    width: 11.8%;
+    background-position: 50% 50%;
+    background-color: #fff; }
+  .wrapper-right__header {
+    color: #3d6cb0;
+    text-transform: uppercase;
+    font-size: 3.7rem;
+    font-weight: bold;
+    white-space: nowrap;
+    word-wrap: break-word;
+    min-width: fit-content;
+    max-width: 400px;
+    box-sizing: border-box;
+    letter-spacing: 3px;
+    margin: 0;
+    margin-left: 3%;
+    padding-bottom: 5px;
+    padding-right: 10px; }
+  .wrapper-right__line {
+    height: 8px;
+    margin-left: 1%;
+    width: 100%;
+    background: #3d6cb0;
+    overflow: hidden;
+    box-sizing: border-box; }
 
 .content {
   margin: 0;
@@ -151,8 +185,7 @@ body {
   text-transform: uppercase; }
   .skills-soft {
     letter-spacing: -1.7px;
-    margin: 0 22% 0px 45px;
-    background-color: cyan;
+    margin: 0 22% 0 45px;
     padding-top: 10px;
     text-align: center;
     font-size: 2.55rem; }
@@ -248,29 +281,147 @@ body {
 .education li {
   list-style: none; }
 
-.education-degree::before {
+.education-container, .experience-container {
+  padding-left: 8.3%;
+  padding-bottom: 37px; }
+
+.education-cont, .experience-cont {
+  padding-top: 5px;
+  padding-right: 30px;
+  padding-bottom: 10px; }
+  .education-cont__text, .experience-cont__text {
+    font-size: 24.0708px;
+    padding-left: 3px;
+    padding-top: 5px;
+    line-height: 1.85rem;
+    word-spacing: -2px; }
+
+.education-degree::before, .experience-company::before {
   content: '';
-  width: 1.7vw;
-  height: 1.7vw;
-  margin: auto 2% auto 1%;
+  display: flex;
+  position: absolute;
+  left: -62px;
+  top: 13px;
+  align-items: center;
+  width: 3.5%;
+  padding-bottom: 3.5%;
   border-radius: 50%;
   background-color: black; }
 
-.education-degree {
+.education-degree, .experience-company {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  flex-wrap: wrap; }
-  .education-degree_master {
+  align-items: center;
+  flex-wrap: wrap;
+  height: fit-content; }
+  .education-degree__master, .experience-company__name {
     font-size: 2.5rem;
     font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: -5px;
     text-transform: uppercase;
     color: #3d6cb0; }
-  .education-degree_years {
-    margin-left: 1%; }
+  .education-degree__years, .experience-company__years {
+    margin-left: 2%;
+    letter-spacing: -1px;
+    font-size: 2.5rem; }
 
-.education-university {
-  text-transform: uppercase; }
+.education-university, .experience-job {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: -1.5px; }
 
-.education-cont_text {
-  font-size: 24.688px; }
+.experience li {
+  list-style: none; }
+
+.experience-container {
+  padding-bottom: 62px; }
+
+.experience-cont {
+  padding-top: 28px;
+  padding-bottom: 11px; }
+  .experience-cont__text {
+    margin-bottom: -24.5px; }
+
+.experience-company ::before {
+  top: 11px; }
+
+.experience-company__name {
+  color: black;
+  letter-spacing: 1.5px;
+  word-spacing: -4.5px; }
+
+.experience-job {
+  letter-spacing: -1px;
+  word-spacing: 0px; }
+
+.rect, .software-hard__points__389, .software-hard__points__300, .software-hard__points__240, .software-hard__points__342, .software-hard__points__354 {
+  display: inline-block;
+  margin-top: 0px;
+  height: 34px;
+  background-color: #3d6cb0; }
+
+.software-hard {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  padding-left: 11px;
+  padding-right: 4px; }
+  .software-hard__row__1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .software-hard__row__1 h4 {
+      font-weight: normal;
+      text-transform: uppercase;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 20px;
+      margin-top: 32px;
+      letter-spacing: -1px;
+      font-size: 2.5rem; }
+  .software-hard__row__2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .software-hard__row__2 h4 {
+      font-weight: normal;
+      text-transform: uppercase;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 17px;
+      margin-top: 31px;
+      letter-spacing: -1px;
+      font-size: 2.5rem; }
+  .software-hard__row__3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .software-hard__row__3 h4 {
+      font-weight: normal;
+      text-transform: uppercase;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 12px;
+      margin-top: 31px;
+      letter-spacing: -1px;
+      font-size: 2.5rem; }
+  .software-hard__points {
+    display: flex;
+    text-align: left;
+    height: 34px;
+    padding: 0;
+    background-color: #f0eded;
+    width: 426px; }
+    .software-hard__points__389 {
+      width: 389px; }
+    .software-hard__points__300 {
+      width: 300px; }
+    .software-hard__points__240 {
+      width: 240px; }
+    .software-hard__points__342 {
+      width: 263px; }
+    .software-hard__points__354 {
+      width: 354px; }
