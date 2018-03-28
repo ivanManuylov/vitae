@@ -4,6 +4,36 @@ $maincolor:#3d6cb0;
 $globalfont :'PT Sans';
 $width: 100%;
 $sizeoffont:30.86px;
+// $skills: (creative,teamwork,innovate,communication);
+$pointsOfSkills: (1,2,3,4,5,6,7,8,9,10,11,12);
+@mixin skillsPoint($valu){
+  &__items {
+    width:92%;
+    height:27px;
+    background-color: #fff;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: -6px;
+    margin:0 auto;
+    padding-right:3px;
+    padding-left:1px;
+  }
+  &__item {
+    display:inline-block;
+    margin:0px;
+    width:27px;
+    background-color: #f0eded;
+    border-radius: 50%;
+  }
+  &__item:nth-child(-n+#{$valu}) {
+    background-color: $maincolor;
+  }
+  &_items:last-child {
+    margin-bottom:10px;
+  }
+}
 
 @mixin color($color){
   color:$color;
@@ -184,36 +214,25 @@ body {
 .skills {
   text-transform:uppercase;
   &-soft {
-    letter-spacing: -1.5px;
-    margin-top:-10px;
-    padding:0% 45% 10% 32%;
+    letter-spacing: -1.7px;
+    margin:0 22% 0px 45px;
+    background-color: cyan;
+    padding-top: 10px;
+    text-align:center;
     font-size: 2.55rem;
     &__creative{
-     
-      &__items {
-        width:290%;
-        height:27px;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        position: relative;
-        top: -29px;
-        left: -174px;
-      }
-      &__item {
-        display:inline-block;
-        vertical-align: center;
-        margin-right:4px;
-        width:29px;
-        background-color: $maincolor;
-        border-radius: 50%;
-      }
-      &__item:nth-child(n+10) {
-        background-color: #f0eded;
-      }
+      @include skillsPoint(9);
+    }
+    &__teamwork {
+      @include skillsPoint(11);
+    }
+    &__innovate {  
+      @include skillsPoint(6);
+    }
+    &__communication {
+      @include skillsPoint(11);
     }
   }
-
 }
 .education{
   

@@ -150,28 +150,100 @@ body {
 .skills {
   text-transform: uppercase; }
   .skills-soft {
-    letter-spacing: -1.5px;
-    margin-top: -10px;
-    padding: 0% 45% 10% 32%;
+    letter-spacing: -1.7px;
+    margin: 0 22% 0px 45px;
+    background-color: cyan;
+    padding-top: 10px;
+    text-align: center;
     font-size: 2.55rem; }
     .skills-soft__creative__items {
-      width: 290%;
+      width: 92%;
       height: 27px;
+      background-color: #fff;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       position: relative;
-      top: -29px;
-      left: -174px; }
+      top: -6px;
+      margin: 0 auto;
+      padding-right: 3px;
+      padding-left: 1px; }
     .skills-soft__creative__item {
       display: inline-block;
-      vertical-align: center;
-      margin-right: 4px;
-      width: 29px;
-      background-color: #3d6cb0;
+      margin: 0px;
+      width: 27px;
+      background-color: #f0eded;
       border-radius: 50%; }
-    .skills-soft__creative__item:nth-child(n+10) {
-      background-color: #f0eded; }
+    .skills-soft__creative__item:nth-child(-n+9) {
+      background-color: #3d6cb0; }
+    .skills-soft__creative_items:last-child {
+      margin-bottom: 10px; }
+    .skills-soft__teamwork__items {
+      width: 92%;
+      height: 27px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+      top: -6px;
+      margin: 0 auto;
+      padding-right: 3px;
+      padding-left: 1px; }
+    .skills-soft__teamwork__item {
+      display: inline-block;
+      margin: 0px;
+      width: 27px;
+      background-color: #f0eded;
+      border-radius: 50%; }
+    .skills-soft__teamwork__item:nth-child(-n+11) {
+      background-color: #3d6cb0; }
+    .skills-soft__teamwork_items:last-child {
+      margin-bottom: 10px; }
+    .skills-soft__innovate__items {
+      width: 92%;
+      height: 27px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+      top: -6px;
+      margin: 0 auto;
+      padding-right: 3px;
+      padding-left: 1px; }
+    .skills-soft__innovate__item {
+      display: inline-block;
+      margin: 0px;
+      width: 27px;
+      background-color: #f0eded;
+      border-radius: 50%; }
+    .skills-soft__innovate__item:nth-child(-n+6) {
+      background-color: #3d6cb0; }
+    .skills-soft__innovate_items:last-child {
+      margin-bottom: 10px; }
+    .skills-soft__communication__items {
+      width: 92%;
+      height: 27px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+      top: -6px;
+      margin: 0 auto;
+      padding-right: 3px;
+      padding-left: 1px; }
+    .skills-soft__communication__item {
+      display: inline-block;
+      margin: 0px;
+      width: 27px;
+      background-color: #f0eded;
+      border-radius: 50%; }
+    .skills-soft__communication__item:nth-child(-n+11) {
+      background-color: #3d6cb0; }
+    .skills-soft__communication_items:last-child {
+      margin-bottom: 10px; }
 
 .education li {
   list-style: none; }

@@ -7,6 +7,7 @@ html(lang="ru")
         link(rel="stylesheet", href="css/style.css")
         link(rel="stylesheet", href="css/fonts.css")
         link(rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css")
+        link(href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i" rel="stylesheet")
         title Сurriculum vitae
     body      
       .cv
@@ -46,32 +47,27 @@ html(lang="ru")
                         .wrapper-left__header Skills
                         .wrapper-left__line 
                     .skills-soft
+                        - var x = 12;
                         p.skills-soft__creative creative
-                            - var x = 12;
-                            - var y = 9;
-                                div.skills-soft__creative__items
+                                .skills-soft__creative__items
                                     - for (var i=0; i<x; i++) {     
-                                            div.skills-soft__creative__item
+                                            .skills-soft__creative__item
                                     - }
                         p.skills-soft__teamwork teamwork
-                            - var x = 12;
-                            - var y = 11;
-                                - for (var i=0; i<x; i++) {     
-                                    div.skills-soft__teamwork__items
-                                        
-                                - }
+                                .skills-soft__teamwork__items
+                                    - for (var i=0; i<x; i++) {     
+                                            .skills-soft__teamwork__item    
+                                    - }
                         p.skills-soft__innovate innovate
-                            - var x = 12;
-                            - var y = 6;
-                                - for (var i=0; i<x; i++) {     
-                                    div.skills-soft__innovate__items
-                                - }
+                                .skills-soft__innovate__items
+                                    - for (var i=0; i<x; i++) {     
+                                       .skills-soft__innovate__item
+                                    - }
                         p.skills-soft__communication communication
-                            - var x = 12;
-                            - var y = 11;
-                                - for (var i=0; i<x; i++) {     
-                                    div.skills-soft__communication__items
-                                - }
+                                .skills-soft__communication__items
+                                    - for (var i=0; i<x; i++) {     
+                                        .skills-soft__communication__item
+                                    - }
                             //-  для правого блока теперь.
             .secondBlock
                 .education
