@@ -5,175 +5,179 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0, user-scalable=no" )
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(rel="stylesheet", href="css/style.css")
-        link(rel="stylesheet", href="css/fonts.css")
-        link(rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css")
+        link(rel="stylesheet" href="css/flexboxgrid.min.css")
         link(href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i" rel="stylesheet")
         title Сurriculum vitae
     body      
-      .cv
-            .firstBlock       
-                .info
-                    .mainPhoto
-                    h2 Name Here
-                    .info-classfat Surname
-                    h3 Graphic Designer
-                .profi
-                    .wrapper-left
-                        img(src="img/profi-icon.png", alt="Profle")
-                        .wrapper-left__header Profile
-                        .wrapper-left__line 
-                        
-                    p.content Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu 
-                            b.bold pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
-                .contact
-                    .wrapper-left
-                        img(src="img/contact-icon.png", alt="contacts") 
-                        .wrapper-left__header Contact
-                        .wrapper-left__line
-                    .contact-info
-                        .contact-info__leftcol
-                            p Address 
-                            p E-mail 
-                            p Phone 
-                            p Website 
-                        .contact-info__rightcol
-                            p Main Street, City.
-                            p contact@domain.com
-                            p 555-555-555
-                            p www.yourweb.com
-                .skills
-                    .wrapper-left
-                        img(src="img/skills-icon.png", alt="skills") 
-                        .wrapper-left__header Skills
-                        .wrapper-left__line 
-                    .skills-soft
-                        - var x = 12;
-                        p.skills-soft__creative creative
-                                .skills-soft__creative__items
-                                    - for (var i=0; i<x; i++) {     
-                                            .skills-soft__creative__item
-                                    - }
-                        p.skills-soft__teamwork teamwork
-                                .skills-soft__teamwork__items
-                                    - for (var i=0; i<x; i++) {     
-                                            .skills-soft__teamwork__item    
-                                    - }
-                        p.skills-soft__innovate innovate
-                                .skills-soft__innovate__items
-                                    - for (var i=0; i<x; i++) {     
-                                       .skills-soft__innovate__item
-                                    - }
-                        p.skills-soft__communication communication
-                                .skills-soft__communication__items
-                                    - for (var i=0; i<x; i++) {     
-                                        .skills-soft__communication__item
-                                    - }
-                            //-  для правого блока теперь.
-            .secondBlock
-                .education
-                    .wrapper-right
-                        img(src="img/education-icon.png", alt="education") 
-                        .wrapper-right__header  Education
-                        .wrapper-right__line  
-                    ul.education-container
-                        li.education-cont
-                            .education-degree
-                                .education-degree__master master degree 
-                                .education-degree__years // Feb 2011 - Jun 2014 
-                            .education-university university name 
-                            .education-cont__text   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                                Aenean commodo ligula eget dolor. Aenean massa. 
-                                Cum sociis natoque penatibus et magnis dis parturient montes,
-                                nascetur ridiculus mus. 
-                                Donec quam felis, ultricies nec, pellentesque.
-                        li.education-cont  
-                            .education-degree
-                                .education-degree__master master degree 
-                                .education-degree__years // Feb 2011 - Jun 2014 
-                            .education-university university name 
-                            .education-cont__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                                Aenean commodo ligula eget dolor. Aenean massa. 
-                                Cum sociis natoque penatibus et magnis dis parturient montes,
-                                nascetur ridiculus mus. 
-                                Donec quam felis, ultricies nec, pellentesque.
-                        li.education-cont
-                            .education-degree
-                                .education-degree__master master degree 
-                                .education-degree__years // Feb 2011 - Jun 2014 
-                            .education-university university name 
-                            .education-cont__text  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                                Aenean commodo ligula eget dolor. Aenean massa. 
-                                Cum sociis natoque penatibus et magnis dis parturient montes,
-                                nascetur ridiculus mus. 
-                                Donec quam felis, ultricies nec, pellentesque.
-                        li.education-cont
-                            .education-degree
-                                .education-degree__master master degree 
-                                .education-degree__years // Feb 2011 - Jun 2014 
-                            .education-university university name 
-                            .education-cont__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                                Aenean commodo ligula eget dolor. Aenean massa. 
-                                Cum sociis natoque penatibus et magnis dis parturient montes,
-                                nascetur ridiculus mus. 
-                                Donec quam felis, ultricies nec, pellentesque.
-                
-                .experience
-                    .wrapper-right
-                        img(src="img/experience-icon.png", alt="experience")
-                        .wrapper-right__header Experience   
-                        .wrapper-right__line 
-                    ul.experience-container
-                        li.experience-cont
-                            .experience-company 
-                                .experience-company__name company name 
-                                .experience-company__years // Feb 2011 - Jun 2014 
-                            .experience-job your job here
-                            .experience-cont__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
-                        li.experience-cont
-                            .experience-company 
-                                .experience-company__name company name 
-                                .experience-company__years // Feb 2011 - Jun 2014 
-                            .experience-job your job here
-                            .experience-cont__text  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
-                        li.experience-cont
-                            .experience-company 
-                                .experience-company__name company name 
-                                .experience-company__years // Feb 2011 - Jun 2014 
-                            .experience-job your job here
-                            .experience-cont__text  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
 
-                .software
+    .cv
+        .firstBlock       
+            .info
+                .mainPhoto
+                h2 Name Here
+                .info-classfat Surname
+                h3 Graphic Designer
+            .profi
+                .wrapper-left
+                    img(src="img/profi-icon.png", alt="Profle")
+                    .wrapper-left__header Profile
+                    .wrapper-left__line 
+                    
+                .profi__content Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu 
+                        b.bold pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
+            .contact
+                .wrapper-left
+                    img(src="img/contact-icon.png", alt="contacts") 
+                    .wrapper-left__header Contact
+                    .wrapper-left__line
+                .contact-info
+                    .contact-info__address
+                        h5  Address 
+                        .contact-info__text Main Street, City.
+                    .contact-info__mail
+                        h5  E-mail 
+                        .contact-info__text contact@domain.com
+                    .contact-info__phone
+                        h5  Phone 
+                        .contact-info__text 555-555-555 
+                    .contact-info__website
+                        h5  Website
+                        .contact-info__text www.yourweb.com 
+
+            .skills
+                .wrapper-left
+                    img(src="img/skills-icon.png", alt="skills") 
+                    .wrapper-left__header Skills
+                    .wrapper-left__line 
+                .skills-soft
+                    - var x = 12;
+                    p.skills-soft__creative creative
+                            .skills-soft__creative__items
+                                - for (var i=0; i<x; i++) {     
+                                        .skills-soft__creative__item
+                                - }
+                    p.skills-soft__teamwork teamwork
+                            .skills-soft__teamwork__items
+                                - for (var i=0; i<x; i++) {     
+                                        .skills-soft__teamwork__item    
+                                - }
+                    p.skills-soft__innovate innovate
+                            .skills-soft__innovate__items
+                                - for (var i=0; i<x; i++) {     
+                                    .skills-soft__innovate__item
+                                - }
+                    p.skills-soft__communication communication
+                            .skills-soft__communication__items
+                                - for (var i=0; i<x; i++) {     
+                                    .skills-soft__communication__item
+                                - }
+                        //-  для правого блока теперь.
+        .secondBlock
+            .education
+                .wrapper-right
+                    img(src="img/education-icon.png", alt="education") 
+                    .wrapper-right__header  Education
+                    .wrapper-right__line  
+                ul.education-container
+                    li.education-cont
+                        .education-degree
+                            .education-degree__master master degree 
+                            .education-degree__years // Feb 2011 - Jun 2014 
+                        .education-university university name 
+                        .education-cont__text   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa. 
+                            Cum sociis natoque penatibus et magnis dis parturient montes,
+                            nascetur ridiculus mus. 
+                            Donec quam felis, ultricies nec, pellentesque.
+                    li.education-cont  
+                        .education-degree
+                            .education-degree__master master degree 
+                            .education-degree__years // Feb 2011 - Jun 2014 
+                        .education-university university name 
+                        .education-cont__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa. 
+                            Cum sociis natoque penatibus et magnis dis parturient montes,
+                            nascetur ridiculus mus. 
+                            Donec quam felis, ultricies nec, pellentesque.
+                    li.education-cont
+                        .education-degree
+                            .education-degree__master master degree 
+                            .education-degree__years // Feb 2011 - Jun 2014 
+                        .education-university university name 
+                        .education-cont__text  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa. 
+                            Cum sociis natoque penatibus et magnis dis parturient montes,
+                            nascetur ridiculus mus. 
+                            Donec quam felis, ultricies nec, pellentesque.
+                    li.education-cont
+                        .education-degree
+                            .education-degree__master master degree 
+                            .education-degree__years // Feb 2011 - Jun 2014 
+                        .education-university university name 
+                        .education-cont__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa. 
+                            Cum sociis natoque penatibus et magnis dis parturient montes,
+                            nascetur ridiculus mus. 
+                            Donec quam felis, ultricies nec, pellentesque.
+            
+            .experience
+                .wrapper-right
+                    img(src="img/experience-icon.png", alt="experience")
+                    .wrapper-right__header Experience   
+                    .wrapper-right__line 
+                ul.experience-container
+                    li.experience-cont
+                        .experience-company 
+                            .experience-company__name company name 
+                            .experience-company__years // Feb 2011 - Jun 2014 
+                        .experience-job your job here
+                        .experience-cont__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+                    li.experience-cont
+                        .experience-company 
+                            .experience-company__name company name 
+                            .experience-company__years // Feb 2011 - Jun 2014 
+                        .experience-job your job here
+                        .experience-cont__text  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+                    li.experience-cont
+                        .experience-company 
+                            .experience-company__name company name 
+                            .experience-company__years // Feb 2011 - Jun 2014 
+                        .experience-job your job here
+                        .experience-cont__text  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+
+            .software
                     mixin softwarePoints(n)
                         div.software-hard__points
                             div(class='software-hard__points__'+ n)
-                    .wrapper-right
-                        img(src="img/software-icon.png", alt="software") 
-                        .wrapper-right__header Software
-                        .wrapper-right__line 
-                    .software-hard
-                        .software-hard__row__1
-                            .software-hard__photoshop   
-                                h4  Photoshop
-                                +softwarePoints(389)
-                            .software-hard__dreamviewer 
-                                h4  dreamviewer
-                                +softwarePoints(354)
-                        .software-hard__row__2
-                            .software-hard__illustrator 
-                                h4  Illustrator
-                                +softwarePoints(300)
-                            .software-hard__after 
-                                h4  after effects
-                                +softwarePoints(342)
-                        .software-hard__row__3
-                            .software-hard__indesign 
-                                h4  Indesign
-                                +softwarePoints(240)
-                            .software-hard__html 
-                                h4  html&ampcss3 
-                                +softwarePoints(389) 
+                .wrapper-right
+                    img(src="img/software-icon.png", alt="software") 
+                    .wrapper-right__header Software
+                    .wrapper-right__line 
+                .software-hard
+                    .software-hard__row__1
+                        .software-hard__photoshop   
+                            h4  Photoshop
+                            +softwarePoints(389)
+                        .software-hard__dreamviewer 
+                            h4  dreamviewer
+                            +softwarePoints(354)
+                    .software-hard__row__2
+                        .software-hard__illustrator 
+                            h4  Illustrator
+                            +softwarePoints(300)
+                        .software-hard__after 
+                            h4  after effects
+                            +softwarePoints(342)
+                    .software-hard__row__3
+                        .software-hard__indesign 
+                            h4  Indesign
+                            +softwarePoints(240)
+                        .software-hard__html 
+                            h4  html&ampcss3 
+                            +softwarePoints(389) 
                             
-                            
+                        
+                        
                             
                         
 

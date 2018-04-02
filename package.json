@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivanManuylov/CV.git"
+    "url": "https://github.com/ivanManuylov/vitae.git"
   },
   "author": "Ivan",
   "license": "ISC",
@@ -19,6 +19,7 @@
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
     "gulp-jade": "^1.1.0",
     "gulp-sass": "^3.1.0",
     "smart-grid": "^2.0.1"

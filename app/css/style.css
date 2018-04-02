@@ -23,25 +23,21 @@ body {
 
 .cv {
   display: inline-block;
-  background-color: forestgreen;
   width: 100%;
-  height: 100%; }
-
-.firstBlock {
-  width: 750px;
-  margin: 130px 0px 0px 95px;
-  max-width: 830px;
-  float: left;
-  padding-top: 5px;
-  background-color: chartreuse; }
-
-.secondBlock {
-  float: left;
-  width: 972px;
-  max-width: 1380px;
-  margin: 0;
-  margin: 116px 0 100px auto;
-  background-color: #fff; }
+  height: 100%;
+  max-width: 1920px; }
+  .cv .firstBlock {
+    width: 750px;
+    margin: 130px 0px 0px 95px;
+    max-width: 830px;
+    float: left;
+    padding-top: 5px; }
+  .cv .secondBlock {
+    float: left;
+    width: 972px;
+    max-width: 1380px;
+    margin: 0;
+    margin: 116px 0 100px auto; }
 
 .mainPhoto {
   width: 42%;
@@ -87,6 +83,7 @@ body {
   align-content: center;
   justify-content: flex-start; }
   .wrapper-left img {
+    max-width: 100%;
     height: 16.5%;
     width: 16.5%;
     background-position: 50% 50%;
@@ -125,7 +122,8 @@ body {
     height: 11.8%;
     width: 11.8%;
     background-position: 50% 50%;
-    background-color: #fff; }
+    background-color: #fff;
+    max-width: 100%; }
   .wrapper-right__header {
     color: #3d6cb0;
     text-transform: uppercase;
@@ -149,134 +147,186 @@ body {
     overflow: hidden;
     box-sizing: border-box; }
 
-.content {
+.profi__content {
   margin: 0;
-  font-size: 24px;
-  line-height: 28px;
+  width: 639px;
+  font-size: 1.5rem;
+  line-height: 1.83rem;
   padding-right: 16%;
   padding-top: 20px;
   word-spacing: -2.9px;
-  line-height: 28px;
-  margin-bottom: 10%; }
+  margin-bottom: 8.6%; }
 
-.contact-info {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: left;
-  width: 60%;
-  font-size: 2rem;
-  color: black;
-  margin-bottom: 3.3%; }
-  .contact-info__leftcol {
-    display: block;
-    padding-bottom: 10px;
-    line-height: 51px;
-    text-transform: uppercase;
-    color: #3d6cb0;
-    font-weight: bold; }
-  .contact-info__rightcol {
-    padding-bottom: 1px;
-    margin-left: 14%;
-    line-height: 51px; }
+.contact {
+  padding: 0;
+  margin: 0; }
+  .contact-info {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 9.2%;
+    height: 338px; }
+    .contact-info__address, .contact-info__mail, .contact-info__phone, .contact-info__website {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      flex-basis: 50px;
+      margin-top: 40px; }
+    .contact-info h5 {
+      padding: 0;
+      margin: 0;
+      flex-basis: 132px;
+      align-self: center;
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: #3d6cb0;
+      font-weight: bold;
+      background-color: #fff; }
+    .contact-info__text {
+      align-self: center;
+      padding-left: 8.5%; }
+    .contact-info__mail {
+      padding: 0;
+      margin: 0;
+      margin-top: 35px; }
+    .contact-info__phone {
+      padding: 0;
+      margin: 0;
+      margin-top: 33px; }
+    .contact-info__website {
+      padding: 0;
+      margin: 0;
+      margin-top: 33px; }
 
 .skills {
   text-transform: uppercase; }
   .skills-soft {
     letter-spacing: -1.7px;
-    margin: 0 22% 0 45px;
-    padding-top: 10px;
+    margin: 30px 22% 0 45px;
     text-align: center;
-    font-size: 2.55rem; }
-    .skills-soft__creative__items {
-      width: 92%;
-      height: 27px;
-      background-color: #fff;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      position: relative;
-      top: -6px;
-      margin: 0 auto;
-      padding-right: 3px;
-      padding-left: 1px; }
-    .skills-soft__creative__item {
-      display: inline-block;
-      margin: 0px;
-      width: 27px;
-      background-color: #f0eded;
-      border-radius: 50%; }
-    .skills-soft__creative__item:nth-child(-n+9) {
-      background-color: #3d6cb0; }
-    .skills-soft__creative_items:last-child {
-      margin-bottom: 10px; }
-    .skills-soft__teamwork__items {
-      width: 92%;
-      height: 27px;
-      background-color: #fff;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      position: relative;
-      top: -6px;
-      margin: 0 auto;
-      padding-right: 3px;
-      padding-left: 1px; }
-    .skills-soft__teamwork__item {
-      display: inline-block;
-      margin: 0px;
-      width: 27px;
-      background-color: #f0eded;
-      border-radius: 50%; }
-    .skills-soft__teamwork__item:nth-child(-n+11) {
-      background-color: #3d6cb0; }
-    .skills-soft__teamwork_items:last-child {
-      margin-bottom: 10px; }
-    .skills-soft__innovate__items {
-      width: 92%;
-      height: 27px;
-      background-color: #fff;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      position: relative;
-      top: -6px;
-      margin: 0 auto;
-      padding-right: 3px;
-      padding-left: 1px; }
-    .skills-soft__innovate__item {
-      display: inline-block;
-      margin: 0px;
-      width: 27px;
-      background-color: #f0eded;
-      border-radius: 50%; }
-    .skills-soft__innovate__item:nth-child(-n+6) {
-      background-color: #3d6cb0; }
-    .skills-soft__innovate_items:last-child {
-      margin-bottom: 10px; }
-    .skills-soft__communication__items {
-      width: 92%;
-      height: 27px;
-      background-color: #fff;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      position: relative;
-      top: -6px;
-      margin: 0 auto;
-      padding-right: 3px;
-      padding-left: 1px; }
-    .skills-soft__communication__item {
-      display: inline-block;
-      margin: 0px;
-      width: 27px;
-      background-color: #f0eded;
-      border-radius: 50%; }
-    .skills-soft__communication__item:nth-child(-n+11) {
-      background-color: #3d6cb0; }
-    .skills-soft__communication_items:last-child {
-      margin-bottom: 10px; }
+    font-size: 2.5rem; }
+    .skills-soft__creative {
+      padding: 0;
+      margin: 0;
+      margin-left: 5px;
+      margin-top: 4px; }
+      .skills-soft__creative__items {
+        width: 92%;
+        height: 27px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        top: 11px;
+        left: 1px;
+        margin: 0 auto;
+        padding-right: 5px;
+        padding-left: 1px; }
+      .skills-soft__creative__item {
+        display: inline-block;
+        margin: 0px;
+        width: 27px;
+        background-color: #f0eded;
+        border-radius: 50%; }
+      .skills-soft__creative__item:nth-child(-n+9) {
+        background-color: #3d6cb0; }
+      .skills-soft__creative_items:last-child {
+        margin-bottom: 10px; }
+    .skills-soft__teamwork {
+      padding: 0;
+      margin: 0;
+      margin-left: 6px;
+      margin-top: -2px;
+      letter-spacing: -0.5px; }
+      .skills-soft__teamwork__items {
+        width: 92%;
+        height: 27px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        top: 11px;
+        left: 1px;
+        margin: 0 auto;
+        padding-right: 5px;
+        padding-left: 1px; }
+      .skills-soft__teamwork__item {
+        display: inline-block;
+        margin: 0px;
+        width: 27px;
+        background-color: #f0eded;
+        border-radius: 50%; }
+      .skills-soft__teamwork__item:nth-child(-n+11) {
+        background-color: #3d6cb0; }
+      .skills-soft__teamwork_items:last-child {
+        margin-bottom: 10px; }
+    .skills-soft__innovate {
+      padding: 0;
+      margin: 0;
+      margin-left: 1px;
+      margin-top: 0px;
+      letter-spacing: -1px; }
+      .skills-soft__innovate__items {
+        width: 92%;
+        height: 27px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        top: 11px;
+        left: 1px;
+        margin: 0 auto;
+        padding-right: 5px;
+        padding-left: 1px; }
+      .skills-soft__innovate__item {
+        display: inline-block;
+        margin: 0px;
+        width: 27px;
+        background-color: #f0eded;
+        border-radius: 50%; }
+      .skills-soft__innovate__item:nth-child(-n+6) {
+        background-color: #3d6cb0; }
+      .skills-soft__innovate_items:last-child {
+        margin-bottom: 10px; }
+    .skills-soft__communication {
+      padding: 0;
+      margin: 0;
+      margin-left: 2px;
+      margin-top: -3px;
+      margin-bottom: -3px;
+      letter-spacing: -0.5px; }
+      .skills-soft__communication__items {
+        width: 92%;
+        height: 27px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        top: 11px;
+        left: 1px;
+        margin: 0 auto;
+        padding-right: 5px;
+        padding-left: 1px; }
+      .skills-soft__communication__item {
+        display: inline-block;
+        margin: 0px;
+        width: 27px;
+        background-color: #f0eded;
+        border-radius: 50%; }
+      .skills-soft__communication__item:nth-child(-n+11) {
+        background-color: #3d6cb0; }
+      .skills-soft__communication_items:last-child {
+        margin-bottom: 10px; }
 
 .education li {
   list-style: none; }
@@ -298,13 +348,13 @@ body {
 
 .education-degree::before, .experience-company::before {
   content: '';
-  display: flex;
+  display: block;
   position: absolute;
   left: -62px;
   top: 13px;
   align-items: center;
-  width: 3.5%;
-  padding-bottom: 3.5%;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: black; }
 
@@ -391,8 +441,8 @@ body {
       text-transform: uppercase;
       padding: 0;
       margin: 0;
-      margin-bottom: 17px;
-      margin-top: 31px;
+      margin-bottom: 15px;
+      margin-top: 32px;
       letter-spacing: -1px;
       font-size: 2.5rem; }
   .software-hard__row__3 {
@@ -405,23 +455,414 @@ body {
       padding: 0;
       margin: 0;
       margin-bottom: 12px;
-      margin-top: 31px;
+      margin-top: 32px;
       letter-spacing: -1px;
       font-size: 2.5rem; }
   .software-hard__points {
-    display: flex;
     text-align: left;
     height: 34px;
     padding: 0;
     background-color: #f0eded;
     width: 426px; }
     .software-hard__points__389 {
-      width: 389px; }
+      width: 91%; }
     .software-hard__points__300 {
-      width: 300px; }
+      width: 70.5%; }
     .software-hard__points__240 {
-      width: 240px; }
+      width: 56%; }
     .software-hard__points__342 {
-      width: 263px; }
+      width: 62%; }
     .software-hard__points__354 {
-      width: 354px; }
+      width: 83%; }
+
+@media screen and (max-width: 1820px) and (min-width: 1650px) {
+  html {
+    font-size: 17px; }
+  .cv {
+    display: inline-block;
+    width: 100%;
+    height: 100%; }
+    .cv .firstBlock {
+      width: 40%;
+      margin: 130px 0px 0px 95px;
+      float: left;
+      padding-top: 5px;
+      background-color: fuchsia; }
+    .cv .secondBlock {
+      float: left;
+      width: 50%;
+      margin: 0;
+      margin: 116px 0 100px auto;
+      background-color: cyan; }
+  .profi__content {
+    width: 85%;
+    padding-right: 5%; }
+  .skills-soft {
+    margin: 15px 10% 0 10%; }
+  .education-container, .experience-container {
+    padding-left: 8.3%;
+    padding-bottom: 37px; }
+  .education-degree::before, .experience-company::before {
+    width: 29px;
+    height: 29px;
+    left: -52px;
+    top: 9px; }
+  .education-degree, .experience-company {
+    flex-wrap: nowrap; }
+    .education-degree__master, .experience-company__name {
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      word-spacing: -5px;
+      text-transform: uppercase;
+      color: #3d6cb0; }
+    .education-degree__years, .experience-company__years {
+      margin-left: 2%;
+      letter-spacing: -1px;
+      font-size: 2rem; }
+  .education-university, .experience-job {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: -1.5px; }
+  .experience-company__name {
+    color: black; }
+  .experience-cont__text {
+    padding-bottom: 30px; }
+  .software-hard {
+    padding-top: 20px; }
+    .software-hard__points {
+      text-align: left;
+      height: 34px;
+      padding: 0;
+      background-color: #f0eded;
+      width: 350px; }
+      .software-hard__points__389 {
+        display: inline-block;
+        margin-top: 0px;
+        height: 34px;
+        background-color: #3d6cb0;
+        width: 91%; }
+      .software-hard__points__300 {
+        display: inline-block;
+        margin-top: 0px;
+        height: 34px;
+        background-color: #3d6cb0;
+        width: 70.5%; }
+      .software-hard__points__240 {
+        display: inline-block;
+        margin-top: 0px;
+        height: 34px;
+        background-color: #3d6cb0;
+        width: 56%; }
+      .software-hard__points__342 {
+        display: inline-block;
+        margin-top: 0px;
+        height: 34px;
+        background-color: #3d6cb0;
+        width: 62%; }
+      .software-hard__points__354 {
+        display: inline-block;
+        margin-top: 0px;
+        height: 34px;
+        background-color: #3d6cb0;
+        width: 83%; } }
+
+@media screen and (max-width: 1649px) and (min-width: 1460px) {
+  html {
+    font-size: 15px; }
+  .cv {
+    display: inline-block;
+    width: 100%;
+    height: 100%; }
+    .cv .firstBlock {
+      width: 40%;
+      margin: 130px 0px 0px 95px;
+      float: left;
+      padding-top: 5px;
+      background-color: cyan; }
+    .cv .secondBlock {
+      float: left;
+      width: 50%;
+      margin: 0;
+      margin: 116px 0 100px auto;
+      background-color: fuchsia; }
+  .profi__content {
+    width: 85%;
+    padding-right: 5%; }
+  .skills-soft {
+    margin: 15px 10% 0 10%; }
+  .education-container, .experience-container {
+    padding-left: 8.3%;
+    padding-bottom: 37px; }
+  .education-cont, .experience-cont {
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom: 10px; }
+    .education-cont__text, .experience-cont__text {
+      font-size: 24.0708px;
+      padding-left: 3px;
+      padding-top: 5px;
+      line-height: 1.85rem;
+      word-spacing: -2px; }
+  .education-degree::before, .experience-company::before {
+    width: 28px;
+    height: 28px;
+    left: -52px;
+    top: 7px; }
+  .education-degree, .experience-company {
+    flex-wrap: nowrap; }
+    .education-degree__master, .experience-company__name {
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      word-spacing: -5px;
+      text-transform: uppercase;
+      color: #3d6cb0; }
+    .education-degree__years, .experience-company__years {
+      margin-left: 2%;
+      letter-spacing: -1px;
+      font-size: 2rem; }
+  .education-university, .experience-job {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: -1.5px; }
+  .experience-company__name {
+    color: black; }
+  .experience-cont__text {
+    padding-bottom: 30px; }
+  .software-hard__points {
+    text-align: left;
+    height: 34px;
+    padding: 0;
+    background-color: #f0eded;
+    width: 350px; }
+    .software-hard__points__389 {
+      display: inline-block;
+      margin-top: 0px;
+      height: 34px;
+      background-color: #3d6cb0;
+      width: 91%; }
+    .software-hard__points__300 {
+      display: inline-block;
+      margin-top: 0px;
+      height: 34px;
+      background-color: #3d6cb0;
+      width: 70.5%; }
+    .software-hard__points__240 {
+      display: inline-block;
+      margin-top: 0px;
+      height: 34px;
+      background-color: #3d6cb0;
+      width: 56%; }
+    .software-hard__points__342 {
+      display: inline-block;
+      margin-top: 0px;
+      height: 34px;
+      background-color: #3d6cb0;
+      width: 62%; }
+    .software-hard__points__354 {
+      display: inline-block;
+      margin-top: 0px;
+      height: 34px;
+      background-color: #3d6cb0;
+      width: 83%; } }
+
+@media screen and (max-width: 1459px) and (min-width: 1152px) {
+  html {
+    font-size: 14px; }
+  .cv {
+    display: inline-block;
+    width: 100%;
+    height: 100%; }
+    .cv .firstBlock {
+      width: 40%;
+      margin-left: 3%;
+      background-color: fuchsia; }
+    .cv .secondBlock {
+      float: left;
+      width: 55%;
+      margin: 0;
+      margin: 116px 0 100px auto;
+      background-color: cyan; }
+  .info .mainPhoto {
+    border: 0.9rem solid white; }
+  .info h2 {
+    font-size: 4.5rem; }
+  .info-classfat {
+    font-size: 4.5rem; }
+  .info h3 {
+    font-size: 2.1rem; }
+  .profi__content {
+    width: 85%;
+    padding-right: 5%;
+    font-size: 1.3rem; }
+  .skills-soft {
+    margin: 15px 7% 0 7%; }
+  .education-container, .experience-container {
+    padding-left: 7.3%;
+    padding-bottom: 10px; }
+  .education-cont, .experience-cont {
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom: 10px; }
+    .education-cont__text, .experience-cont__text {
+      font-size: 1.3rem; }
+  .education-degree::before, .experience-company::before {
+    left: -42px;
+    top: 6px;
+    width: 25px;
+    height: 25px; }
+  .education-degree, .experience-company {
+    flex-wrap: nowrap; }
+    .education-degree__master, .experience-company__name {
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      word-spacing: -5px;
+      text-transform: uppercase;
+      color: #3d6cb0; }
+    .education-degree__years, .experience-company__years {
+      margin-left: 2%;
+      letter-spacing: -1px;
+      font-size: 2rem; }
+  .education-university, .experience-job {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: -1.5px; }
+  .experience-company__name {
+    color: black; }
+  .experience-cont__text {
+    padding-bottom: 30px; }
+  .software-hard__points {
+    text-align: left;
+    height: 34px;
+    padding: 0;
+    background-color: #f0eded;
+    width: 300px; }
+    .software-hard__points__389 {
+      margin-top: 0px;
+      height: 34px; }
+    .software-hard__points__300 {
+      margin-top: 0px;
+      height: 34px; }
+    .software-hard__points__240 {
+      height: 34px; }
+    .software-hard__points__342 {
+      height: 34px; }
+    .software-hard__points__354 {
+      height: 34px; } }
+
+@media screen and (max-width: 1151px) and (min-width: 1020px) {
+  html {
+    font-size: 14px; }
+  .cv {
+    display: inline-block;
+    width: 100%;
+    height: 100%; }
+    .cv .firstBlock {
+      width: 40%;
+      margin-left: 3%;
+      background-color: cyan; }
+    .cv .secondBlock {
+      float: left;
+      width: 55%;
+      margin: 0;
+      margin: 116px 0 100px auto;
+      background-color: fuchsia; }
+  .wrapper-left {
+    width: 100%; }
+    .wrapper-left__header {
+      font-size: 3rem; }
+    .wrapper-left__line {
+      height: 5px; }
+  .wrapper-right__header {
+    font-size: 3rem; }
+  .wrapper-right__line {
+    margin-top: -5px;
+    height: 5px; }
+  .info .mainPhoto {
+    border: 0.9rem solid white; }
+  .info h2 {
+    font-size: 4.5rem; }
+  .info-classfat {
+    font-size: 4.5rem; }
+  .info h3 {
+    font-size: 2.1rem; }
+  .profi__content {
+    width: 85%;
+    padding-right: 5%;
+    font-size: 1.3rem; }
+  .contact-info {
+    width: 87%;
+    font-size: 1.5rem; }
+  .contact h5 {
+    font-size: 1.8rem; }
+  .skills-soft {
+    margin: 15px 7% 0 7%; }
+    .skills-soft p {
+      font-size: 1.9rem; }
+    .skills-soft__creative__items {
+      height: 22px;
+      width: 95%; }
+    .skills-soft__creative__item {
+      width: 22px; }
+    .skills-soft__teamwork__items {
+      height: 22px;
+      width: 95%; }
+    .skills-soft__teamwork__item {
+      width: 22px; }
+    .skills-soft__innovate__items {
+      height: 22px;
+      width: 95%; }
+    .skills-soft__innovate__item {
+      width: 22px; }
+    .skills-soft__communication__items {
+      height: 22px;
+      width: 95%; }
+    .skills-soft__communication__item {
+      width: 22px; }
+  .education-container, .experience-container {
+    padding-left: 7.3%;
+    padding-bottom: 10px; }
+  .education-cont, .experience-cont {
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom: 10px; }
+    .education-cont__text, .experience-cont__text {
+      font-size: 1.3rem; }
+  .education-degree::before, .experience-company::before {
+    left: -32px;
+    top: 8px;
+    width: 22px;
+    height: 22px; }
+  .education-degree__master, .experience-company__name {
+    font-size: 1.7rem; }
+  .education-degree__years, .experience-company__years {
+    margin-left: 2%;
+    font-size: 1.7rem; }
+  .education-university, .experience-job {
+    font-size: 1.7rem; }
+  .experience-company__name {
+    color: black; }
+  .experience-cont__text {
+    padding-bottom: 15px; }
+  .software-hard h4 {
+    font-size: 1.8rem; }
+  .software-hard__points {
+    height: 28px;
+    width: 260px; }
+    .software-hard__points__389 {
+      margin-bottom: 10px;
+      height: 28px; }
+    .software-hard__points__300 {
+      margin-bottom: 10px;
+      height: 28px; }
+    .software-hard__points__240 {
+      margin-bottom: 10px;
+      height: 28px; }
+    .software-hard__points__342 {
+      margin-bottom: 10px;
+      height: 28px; }
+    .software-hard__points__354 {
+      margin-bottom: 10px;
+      height: 28px; } }

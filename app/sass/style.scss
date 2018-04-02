@@ -16,9 +16,10 @@ $pointsOfSkills: (1,2,3,4,5,6,7,8,9,10,11,12);
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    top: -6px;
+    top: 11px;
+    left: 1px;
     margin:0 auto;
-    padding-right:3px;
+    padding-right:5px;
     padding-left:1px;
   }
   &__item {
@@ -31,6 +32,7 @@ $pointsOfSkills: (1,2,3,4,5,6,7,8,9,10,11,12);
   &__item:nth-child(-n+#{$valu}) {
     background-color: $maincolor;
   }
+    // зачем это?
   &_items:last-child {
     margin-bottom:10px;
   }
@@ -71,26 +73,25 @@ body {
 }
 .cv {
   display: inline-block;
-  background-color: forestgreen;
   width:100%;
   height:100%;
+  max-width:1920px;
+  .firstBlock {
+    width:750px;
+    margin:130px 0px 0px 95px;
+    max-width:830px;
+    float: left;
+    padding-top:5px;
+  }
+  .secondBlock {
+    float:left;
+    width:972px;
+    max-width:1380px;
+    margin:0;
+    margin:116px 0 100px auto;
+  }
 }   
-.firstBlock {
-  width:750px;
-  margin:130px 0px 0px 95px;
-  max-width:830px;
-  float: left;
-  padding-top:5px;
-  background-color: chartreuse;
-}
-.secondBlock {
-  float:left;
-  width:972px;
-  max-width:1380px;
-  margin:0;
-  margin:116px 0 100px auto;
-  background-color: #fff;
-}
+
 .mainPhoto {
   // 452 px/2 - radius of round for image ?
   width:0.42*$width;
@@ -141,6 +142,7 @@ body {
     align-content: center; 
     justify-content: flex-start;
     img {
+      max-width:100%;
       height: 16.5%;
       width:16.5%;
       background-position: 50% 50%;
@@ -178,12 +180,12 @@ body {
     align-items: center;
     align-content: center; 
     justify-content: flex-start;
-    
     img {
       height: 11.8%;
       width:11.8%;
       background-position: 50% 50%;
       background-color: #fff;
+      max-width:100%;
     } 
     &__header {
       color: #3d6cb0;
@@ -211,41 +213,75 @@ body {
     }
   }
 }
-.content {
-  margin: 0;
-  font-size: 24px; 
-  line-height: 28px;
-  padding-right:16%;
-  padding-top:20px;
-  word-spacing: -2.9px;
-  line-height: 28px;
-  margin-bottom: 10%;
+.profi{
+  &__content {
+    margin: 0;
+    width:639px;
+    font-size: 1.5rem; 
+    line-height: 1.83rem;
+    padding-right:16%;
+    padding-top:20px;
+    word-spacing: -2.9px;
+    margin-bottom: 8.6%;
+  }
 }
 .contact {
+  padding:0;
+  margin:0;
   &-info {
-    margin-top:10px;
-    display:flex;
-    flex-direction:row;
-    justify-content: space-between;
-    text-align:left;
-    width:60%;
+    padding:0;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width:100%;
     font-size:2rem;
     color:black;
-    margin-bottom: 3.3%;
-    &__leftcol {
-      display:block;
-      padding-bottom:10px;
-      line-height: 51px;
+    margin-bottom: 9.2%;
+    height:338px;
+    &__address {
+      padding:0;
+      margin:0;
+      display: flex;
+      flex-direction: row;
+      flex-basis: 50px;
+      margin-top: 40px;
+    }
+    h5 {
+      padding:0;
+      margin:0;
       //margin-right:20%;
+      flex-basis: 132px;
+      align-self: center;
+      font-size: 2rem;
       text-transform: uppercase;
       @include color($maincolor);
       font-weight: bold;
+      background-color: #fff;
     }
-    &__rightcol {
-      padding-bottom:1px;
-      margin-left:14%;
-      line-height: 51px;
+    &__text {
+      align-self: center;
+      padding-left:8.5%;
     }
+    &__mail {
+      padding:0;
+      margin:0;
+      @extend .contact-info__address;
+      margin-top: 35px;
+    }
+    &__phone {
+      padding:0;
+      margin:0;
+      @extend .contact-info__address;
+      margin-top: 33px;
+    }
+    &__website {
+      padding:0;
+      margin:0;
+      @extend .contact-info__address;
+      margin-top: 33px;
+    }
+    
   }
 }
 
@@ -253,20 +289,39 @@ body {
   text-transform:uppercase;
   &-soft {
     letter-spacing: -1.7px;
-    margin:0 22% 0 45px;
-    padding-top: 10px;
+    margin:30px 22% 0 45px;
     text-align:center;
-    font-size: 2.55rem;
+    font-size: 2.5rem;
     &__creative{
+      padding:0;
+      margin: 0;
+      margin-left:5px;
+      margin-top: 4px;
       @include skillsPoint(9);
     }
     &__teamwork {
+      padding:0;
+      margin: 0;
+      margin-left:6px;
+      margin-top: -2px;
+      letter-spacing: -0.5px;
       @include skillsPoint(11);
     }
-    &__innovate {  
+    &__innovate {
+      padding:0;
+      margin: 0;  
+      margin-left:1px;
+      margin-top: 0px;
+      letter-spacing: -1px;
       @include skillsPoint(6);
     }
     &__communication {
+      padding:0;
+      margin: 0;
+      margin-left:2px;
+      margin-top: -3px;
+      margin-bottom: -3px;
+      letter-spacing: -0.5px;
       @include skillsPoint(11);
     }
   }
@@ -294,13 +349,14 @@ body {
   }
   &-degree::before {
     content: '';
-    display:flex;
+    display:block;
     position: absolute;
     left:-62px;
     top:13px;
     align-items:center;
-    width: 3.5%;
-    padding-bottom: 3.5%;
+    width: 30px;
+      //padding-bottom: 3.5%;
+    height:30px;
     border-radius: 50%;
     background-color: black;
   }
@@ -334,7 +390,6 @@ body {
   
 }
 .experience {
- 
   li {
     list-style: none;
   }
@@ -410,8 +465,8 @@ body {
         text-transform: uppercase;
         padding:0;
         margin:0;
-        margin-bottom:17px;
-        margin-top:31px;
+        margin-bottom:15px;
+        margin-top:32px;
         letter-spacing: -1px;
         font-size:2.5rem;
       }
@@ -427,13 +482,12 @@ body {
       padding:0;
       margin:0;
       margin-bottom:12px;
-      margin-top:31px;
+      margin-top:32px;
       letter-spacing: -1px;
       font-size:2.5rem;
       } 
     }
     &__points {
-      display:flex;
       text-align: left;
       height: 34px;
       padding:0;
@@ -441,29 +495,622 @@ body {
       width: 426px;
       &__389{
         @extend .rect;
-        width: 389px;
+        width: 91%;
       }
       &__300 {
         @extend .rect;
-        width: 300px;
+        width: 70.5%;
       }
       &__240{
         @extend .rect;
-        width: 240px;
+        width: 56%;
       }
       &__342 {
         @extend .rect;
-        width: 263px;
+        width: 62%;
       }
       &__354 {
         @extend .rect;
-        width: 354px;
+        width: 83%;
+        
       }
     }
   }
 } 
- 
+ @media screen and (max-width:1820px) and (min-width:1650px) {
+  $sizeoffont:17px;
+  html {
+    font-size: $sizeoffont;
+  }
+  .cv {
+    display: inline-block;
+    width:100%;
+    height:100%;
+    .firstBlock {
+      width:40%;
+      margin:130px 0px 0px 95px;
+      float: left;
+      padding-top:5px;
+      background-color: fuchsia;
+    }
+    .secondBlock {
+      float:left;
+      width:50%;
+      margin:0;
+      margin:116px 0 100px auto;
+      background-color: cyan;
+    }
+  } 
+  .profi{
+    &__content {
+      width:85%;
+      padding-right: 5%;
+    } 
+  }
+  .skills {
+    &-soft {
+      margin:15px 10% 0 10%;
+    }
+  }
+  .education{
+    &-container{  //обёртка для выравнивания
+    padding-left:8.3%;
+    padding-bottom: 37px;
+    }
+    &-degree::before {
+      width:29px;
+      height:29px;
+      left:-52px;
+      top:9px;
+    }
+    &-degree {
+      flex-wrap: nowrap;
+      &__master  {
+        font-size:2rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        word-spacing: -5px;
+        text-transform: uppercase;
+        @include color($maincolor);
+      }
+      &__years {
+        margin-left:2%;
+        letter-spacing: -1px;
+        font-size: 2rem;
+      }
+    } 
+    &-university {
+      text-transform: uppercase;
+      font-size: 2rem;
+      letter-spacing: -1.5px;
+    }
+  }
+  .experience{
+    &-company {
+      &__name {
+        color: black;
+      }
+    }
+    &-cont{
+      &__text{
+        padding-bottom: 30px;
+  
+      }
+    }
+  }
+  .software {
+    &-hard {
+      padding-top:20px;
+      &__points {
+        text-align: left;
+        height: 34px;
+        padding:0;
+        background-color: #f0eded;
+        width: 350px;
+        &__389{
+          display: inline-block;
+          margin-top:0px;
+          height: 34px;
+          background-color: $maincolor;
+          width: 91%;
+        }
+        &__300 {
+          display: inline-block;
+          margin-top:0px;
+          height: 34px;
+          background-color: $maincolor;
+          width: 70.5%;
+        }
+        &__240{
+          display: inline-block;
+          margin-top:0px;
+          height: 34px;
+          background-color: $maincolor;
+          width: 56%;
+        }
+        &__342 {
+          display: inline-block;
+          margin-top:0px;
+          height: 34px;
+          background-color: $maincolor;
+          width: 62%;
+        }
+        &__354 {
+          display: inline-block;
+          margin-top:0px;
+          height: 34px;
+          background-color: $maincolor;
+          width: 83%;
+          
+        }
+      } 
+    }
+  }
+}
+@media screen and (max-width:1649px) and (min-width:1460px) {
+  html {
+    font-size: 15px;
+  }
+  .cv {
+    display: inline-block;
+    width:100%;
+    height:100%;
+    .firstBlock {
+      width:40%;
+      margin:130px 0px 0px 95px;
+      float: left;
+      padding-top:5px;
+      background-color: cyan;
+    }
+    .secondBlock {
+      float:left;
+      width:50%;
+      margin:0;
+      margin:116px 0 100px auto;
+      background-color: fuchsia;
+    }
+  } 
+  .profi{
+    &__content {
+      width:85%;
+      padding-right: 5%;
+    } 
+  }
+  .skills {
+    &-soft {
+      margin:15px 10% 0 10%;
+    }
+  }
+  .education{
+    &-container{  //обёртка для выравнивания
+    padding-left:8.3%;
+    padding-bottom: 37px;
+    }
+    &-cont{
+      padding-top: 5px;
+      padding-right:30px;
+      padding-bottom:10px;
+      &__text {
+        font-size:$sizeoffont*0.78;
+        padding-left:3px;
+        padding-top:5px;
+        line-height: 1.85rem;
+        word-spacing: -2px;
+      }
+    }
+    &-degree::before {
+      width:28px;
+      height: 28px;
+      left:-52px;
+      top:7px;
+    }
+    &-degree {
+      flex-wrap: nowrap;
+      &__master  {
+        font-size:2rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        word-spacing: -5px;
+        text-transform: uppercase;
+        @include color($maincolor);
+      }
+      &__years {
+        margin-left:2%;
+        letter-spacing: -1px;
+        font-size: 2rem;
+      }
+    } 
+    &-university {
+      text-transform: uppercase;
+      font-size: 2rem;
+      letter-spacing: -1.5px;
+    }
+  }
+  .experience{
+    &-company {
+      &__name {
+        color: black;
+      }
+    }
+    &-cont{
+      &__text{
+        padding-bottom: 30px;
+  
+      }
+    }
+  }
+  .software {
+    &-hard {
+      &__points {
+        text-align: left;
+        height: 34px;
+        padding:0;
+        background-color: #f0eded;
+        width: 350px;
+        &__389{
+          display: inline-block;
+          margin-top:0px;
+          height: 34px;
+          background-color: $maincolor;
+          width: 91%;
+        }
+        &__300 {
+          display: inline-block;
+          margin-top:0px;
+          height: 34px;
+          background-color: $maincolor;
+          width: 70.5%;
+        }
+        &__240{
+          display: inline-block;
+          margin-top:0px;
+          height: 34px;
+          background-color: $maincolor;
+          width: 56%;
+        }
+        &__342 {
+          display: inline-block;
+          margin-top:0px;
+          height: 34px;
+          background-color: $maincolor;
+          width: 62%;
+        }
+        &__354 {
+          display: inline-block;
+          margin-top:0px;
+          height: 34px;
+          background-color: $maincolor;
+          width: 83%;
+          
+        }
+      } 
+    }
+  }
+}
+@media screen and (max-width:1459px) and (min-width:1152px) {
+  html {
+    font-size: 14px;
+  }
+  .cv {
+    display: inline-block;
+    width:100%;
+    height:100%;
+    .firstBlock {
+      width:40%;
+      margin-left: 3%;
+      background-color: fuchsia;
+    }
+    .secondBlock {
+      float:left;
+      width:55%;
+      margin:0;
+      margin:116px 0 100px auto;
+      background-color: cyan;
+    }
+  } 
+  .info {
+    .mainPhoto {
+      border: 0.9rem solid white;
+    }
+    h2 {
+      font-size: 4.5rem;
+    }
+    &-classfat {
+      font-size: 4.5rem;
+    }
+    h3 {
+      font-size: 2.1rem;
+    }
+  }
+  .profi{
+    &__content {
+      width:85%;
+      padding-right: 5%;
+      font-size:1.3rem;
+    } 
+  }
+.skills {
+  &-soft {
+    margin:15px 7% 0 7%;
+  }
+}
 
+.education{
+  &-container{  //обёртка для выравнивания
+  padding-left:7.3%;
+  padding-bottom: 10px;
+  }
+  &-cont{
+    padding-top: 5px;
+    padding-right:30px;
+    padding-bottom:10px;
+    &__text {
+      font-size:1.3rem;
+    }
+  }
+  &-degree::before {
+    left:-42px;
+    top:6px;
+    width: 25px;
+    height:25px;
+    
+  }
+  &-degree {
+    flex-wrap: nowrap;
+    &__master  {
+      font-size:2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      word-spacing: -5px;
+      text-transform: uppercase;
+      @include color($maincolor);
+    }
+    &__years {
+      margin-left:2%;
+      letter-spacing: -1px;
+      font-size: 2rem;
+    }
+  } 
+  &-university {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: -1.5px;
+  }
+}
+.experience {
+  &-company {
+    &__name {
+      color: black;
+    }
+  }
+  &-cont{
+    &__text{
+      padding-bottom: 30px;
+    }
+  }
+}
+  .software {
+    &-hard {
+      &__points {
+        text-align: left;
+        height: 34px;
+        padding:0;
+        background-color: #f0eded;
+        width: 300px;
+        &__389{
+          margin-top:0px;
+          height: 34px;
+        }
+        &__300 {
+          margin-top:0px;
+          height: 34px;
+        }
+        &__240{
+          height: 34px;
+        }
+        &__342 {
+          height: 34px;
+        }
+        &__354 {
+          height: 34px;
+        }
+      } 
+    }
+  }
+}
+@media screen and (max-width:1151px) and (min-width:1020px) {
+  html {
+    font-size: 14px;
+  }
+  .cv {
+    display: inline-block;
+    width:100%;
+    height:100%;
+    .firstBlock {
+      width:40%;
+      margin-left: 3%;
+      background-color: cyan;
+    }
+    .secondBlock {
+      float:left;
+      width:55%;
+      margin:0;
+      margin:116px 0 100px auto;
+      background-color: fuchsia;
+    }
+  } 
+  .wrapper {
+    &-left {
+      width:100%;
+      &__header {
+        font-size: 3rem;
+      }
+      &__line {
+        height:5px;
+      }
+    }
+    &-right {
+      &__header {
+        font-size: 3rem;
+      }
+      &__line {
+        margin-top: -5px;
+        height:5px;
+      }
+    }
+  }
+  .info {
+    .mainPhoto {
+      border: 0.9rem solid white;
+    }
+    h2 {
+      font-size: 4.5rem;
+    }
+    &-classfat {
+      font-size: 4.5rem;
+    }
+    h3 {
+      font-size: 2.1rem;
+    }
+  }
+  .profi{
+    &__content {
+      width:85%;
+      padding-right: 5%;
+      font-size:1.3rem;
+    } 
+  }
+.contact {
+  &-info {
+    width:87%;
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.8rem;
+  }
+}
+.skills {
+  &-soft {
+    margin:15px 7% 0 7%;
+    p {
+      font-size: 1.9rem;
+    }
+    &__creative{
+      &__items {
+        height:22px;
+        width:95%;
+      } 
+      &__item {
+        width:22px;
+      } 
+    }
+    &__teamwork {
+      &__items {
+        height:22px;
+        width:95%;
+      } 
+      &__item {
+        width:22px;
+      } 
+    }
+    &__innovate {
+      &__items {
+        height:22px;
+        width:95%;
+      } 
+      &__item {
+        width:22px;
+      } 
+    }
+    &__communication {
+      &__items {
+        height:22px;
+        width:95%;
+      } 
+      &__item {
+        width:22px;
+      } 
+    }
+  }
+}
+
+.education {
+  &-container {  //обёртка для выравнивания
+  padding-left:7.3%;
+  padding-bottom: 10px;
+  }
+  &-cont {
+    padding-top: 5px;
+    padding-right:30px;
+    padding-bottom:10px;
+    &__text {
+      font-size:1.3rem;
+    }
+  }
+  &-degree::before {
+    left:-32px;
+    top:8px;
+    width: 22px;
+    height:22px;
+    
+  }
+  &-degree {
+    &__master  {
+      font-size:1.7rem;
+    }
+    &__years {
+      margin-left:2%;
+      font-size: 1.7rem;
+    }
+  } 
+  &-university {
+    font-size: 1.7rem;
+  }
+}
+.experience {
+  &-company {
+    &__name {
+      color: black;
+    }
+  }
+  &-cont{
+    &__text{
+      padding-bottom: 15px;
+    }
+  }
+}
+  .software {
+    &-hard {
+      h4 {
+        font-size: 1.8rem;
+      }
+      &__points {
+        height: 28px;
+        width: 260px;
+        &__389{
+          margin-bottom:10px;
+          height: 28px;
+        }
+        &__300 {
+          margin-bottom:10px;
+          height: 28px;
+        }
+        &__240{
+          margin-bottom:10px;
+          height: 28px;
+        }
+        &__342 {
+          margin-bottom:10px;
+          height: 28px;
+        }
+        &__354 {
+          margin-bottom:10px;
+          height: 28px;
+        }
+      } 
+    }
+  }
+}
 // @each  $icons in $icons{
   
 //   .#{$icons}-icon {
