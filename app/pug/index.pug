@@ -23,7 +23,7 @@ html(lang="ru")
                         .wrapper-left__header Profile
                         .wrapper-left__line 
                         
-                    p.content Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu 
+                    .profi__content Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu 
                             b.bold pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
                 .contact
                     .wrapper-left
@@ -31,16 +31,19 @@ html(lang="ru")
                         .wrapper-left__header Contact
                         .wrapper-left__line
                     .contact-info
-                        .contact-info__leftcol
-                            p Address 
-                            p E-mail 
-                            p Phone 
-                            p Website 
-                        .contact-info__rightcol
-                            p Main Street, City.
-                            p contact@domain.com
-                            p 555-555-555
-                            p www.yourweb.com
+                        .contact-info__address
+                            h5  Address 
+                            .contact-info__text Main Street, City.
+                        .contact-info__mail
+                            h5  E-mail 
+                            .contact-info__text contact@domain.com
+                        .contact-info__phone
+                            h5  Phone 
+                            .contact-info__text 555-555-555 
+                        .contact-info__website
+                            h5  Website
+                            .contact-info__text www.yourweb.com 
+
                 .skills
                     .wrapper-left
                         img(src="img/skills-icon.png", alt="skills") 
@@ -172,6 +175,7 @@ html(lang="ru")
                             .software-hard__html 
                                 h4  html&ampcss3 
                                 +softwarePoints(389) 
+                                
                             
                             
                             

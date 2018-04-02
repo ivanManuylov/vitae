@@ -23,7 +23,6 @@ body {
 
 .cv {
   display: inline-block;
-  background-color: forestgreen;
   width: 100%;
   height: 100%; }
 
@@ -32,16 +31,14 @@ body {
   margin: 130px 0px 0px 95px;
   max-width: 830px;
   float: left;
-  padding-top: 5px;
-  background-color: chartreuse; }
+  padding-top: 5px; }
 
 .secondBlock {
   float: left;
   width: 972px;
   max-width: 1380px;
   margin: 0;
-  margin: 116px 0 100px auto;
-  background-color: #fff; }
+  margin: 116px 0 100px auto; }
 
 .mainPhoto {
   width: 42%;
@@ -149,134 +146,170 @@ body {
     overflow: hidden;
     box-sizing: border-box; }
 
-.content {
+.profi__content {
   margin: 0;
-  font-size: 24px;
-  line-height: 28px;
+  width: 639px;
+  font-size: 1.5rem;
+  line-height: 1.83rem;
   padding-right: 16%;
   padding-top: 20px;
   word-spacing: -2.9px;
-  line-height: 28px;
-  margin-bottom: 10%; }
+  margin-bottom: 8.6%; }
 
 .contact-info {
-  margin-top: 10px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: left;
-  width: 60%;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
   font-size: 2rem;
   color: black;
-  margin-bottom: 3.3%; }
-  .contact-info__leftcol {
-    display: block;
-    padding-bottom: 10px;
-    line-height: 51px;
+  margin-bottom: 9.2%; }
+  .contact-info__address, .contact-info__mail, .contact-info__phone, .contact-info__website {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50px;
+    margin-top: 40px; }
+  .contact-info h5 {
+    flex-basis: 132px;
+    align-self: center;
+    font-size: 2rem;
     text-transform: uppercase;
     color: #3d6cb0;
-    font-weight: bold; }
-  .contact-info__rightcol {
-    padding-bottom: 1px;
-    margin-left: 14%;
-    line-height: 51px; }
+    font-weight: bold;
+    background-color: #fff; }
+  .contact-info__text {
+    align-self: center;
+    padding-left: 8.5%; }
+  .contact-info__mail {
+    margin-top: 35px; }
+  .contact-info__phone {
+    margin-top: 33px; }
+  .contact-info__website {
+    margin-top: 33px; }
 
 .skills {
   text-transform: uppercase; }
   .skills-soft {
     letter-spacing: -1.7px;
-    margin: 0 22% 0 45px;
-    padding-top: 10px;
+    margin: 30px 22% 0 45px;
     text-align: center;
-    font-size: 2.55rem; }
-    .skills-soft__creative__items {
-      width: 92%;
-      height: 27px;
-      background-color: #fff;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      position: relative;
-      top: -6px;
-      margin: 0 auto;
-      padding-right: 3px;
-      padding-left: 1px; }
-    .skills-soft__creative__item {
-      display: inline-block;
-      margin: 0px;
-      width: 27px;
-      background-color: #f0eded;
-      border-radius: 50%; }
-    .skills-soft__creative__item:nth-child(-n+9) {
-      background-color: #3d6cb0; }
-    .skills-soft__creative_items:last-child {
-      margin-bottom: 10px; }
-    .skills-soft__teamwork__items {
-      width: 92%;
-      height: 27px;
-      background-color: #fff;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      position: relative;
-      top: -6px;
-      margin: 0 auto;
-      padding-right: 3px;
-      padding-left: 1px; }
-    .skills-soft__teamwork__item {
-      display: inline-block;
-      margin: 0px;
-      width: 27px;
-      background-color: #f0eded;
-      border-radius: 50%; }
-    .skills-soft__teamwork__item:nth-child(-n+11) {
-      background-color: #3d6cb0; }
-    .skills-soft__teamwork_items:last-child {
-      margin-bottom: 10px; }
-    .skills-soft__innovate__items {
-      width: 92%;
-      height: 27px;
-      background-color: #fff;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      position: relative;
-      top: -6px;
-      margin: 0 auto;
-      padding-right: 3px;
-      padding-left: 1px; }
-    .skills-soft__innovate__item {
-      display: inline-block;
-      margin: 0px;
-      width: 27px;
-      background-color: #f0eded;
-      border-radius: 50%; }
-    .skills-soft__innovate__item:nth-child(-n+6) {
-      background-color: #3d6cb0; }
-    .skills-soft__innovate_items:last-child {
-      margin-bottom: 10px; }
-    .skills-soft__communication__items {
-      width: 92%;
-      height: 27px;
-      background-color: #fff;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      position: relative;
-      top: -6px;
-      margin: 0 auto;
-      padding-right: 3px;
-      padding-left: 1px; }
-    .skills-soft__communication__item {
-      display: inline-block;
-      margin: 0px;
-      width: 27px;
-      background-color: #f0eded;
-      border-radius: 50%; }
-    .skills-soft__communication__item:nth-child(-n+11) {
-      background-color: #3d6cb0; }
-    .skills-soft__communication_items:last-child {
-      margin-bottom: 10px; }
+    font-size: 2.5rem; }
+    .skills-soft__creative {
+      padding: 0;
+      margin: 0;
+      margin-left: 5px;
+      margin-top: 4px; }
+      .skills-soft__creative__items {
+        width: 92%;
+        height: 27px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        top: 11px;
+        left: 1px;
+        margin: 0 auto;
+        padding-right: 5px;
+        padding-left: 1px; }
+      .skills-soft__creative__item {
+        display: inline-block;
+        margin: 0px;
+        width: 27px;
+        background-color: #f0eded;
+        border-radius: 50%; }
+      .skills-soft__creative__item:nth-child(-n+9) {
+        background-color: #3d6cb0; }
+      .skills-soft__creative_items:last-child {
+        margin-bottom: 10px; }
+    .skills-soft__teamwork {
+      padding: 0;
+      margin: 0;
+      margin-left: 6px;
+      margin-top: -2px;
+      letter-spacing: -0.5px; }
+      .skills-soft__teamwork__items {
+        width: 92%;
+        height: 27px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        top: 11px;
+        left: 1px;
+        margin: 0 auto;
+        padding-right: 5px;
+        padding-left: 1px; }
+      .skills-soft__teamwork__item {
+        display: inline-block;
+        margin: 0px;
+        width: 27px;
+        background-color: #f0eded;
+        border-radius: 50%; }
+      .skills-soft__teamwork__item:nth-child(-n+11) {
+        background-color: #3d6cb0; }
+      .skills-soft__teamwork_items:last-child {
+        margin-bottom: 10px; }
+    .skills-soft__innovate {
+      padding: 0;
+      margin: 0;
+      margin-left: 1px;
+      margin-top: 0px;
+      letter-spacing: -1px; }
+      .skills-soft__innovate__items {
+        width: 92%;
+        height: 27px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        top: 11px;
+        left: 1px;
+        margin: 0 auto;
+        padding-right: 5px;
+        padding-left: 1px; }
+      .skills-soft__innovate__item {
+        display: inline-block;
+        margin: 0px;
+        width: 27px;
+        background-color: #f0eded;
+        border-radius: 50%; }
+      .skills-soft__innovate__item:nth-child(-n+6) {
+        background-color: #3d6cb0; }
+      .skills-soft__innovate_items:last-child {
+        margin-bottom: 10px; }
+    .skills-soft__communication {
+      padding: 0;
+      margin: 0;
+      margin-left: 2px;
+      margin-top: -3px;
+      margin-bottom: -3px;
+      letter-spacing: -0.5px; }
+      .skills-soft__communication__items {
+        width: 92%;
+        height: 27px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        top: 11px;
+        left: 1px;
+        margin: 0 auto;
+        padding-right: 5px;
+        padding-left: 1px; }
+      .skills-soft__communication__item {
+        display: inline-block;
+        margin: 0px;
+        width: 27px;
+        background-color: #f0eded;
+        border-radius: 50%; }
+      .skills-soft__communication__item:nth-child(-n+11) {
+        background-color: #3d6cb0; }
+      .skills-soft__communication_items:last-child {
+        margin-bottom: 10px; }
 
 .education li {
   list-style: none; }
@@ -409,7 +442,6 @@ body {
       letter-spacing: -1px;
       font-size: 2.5rem; }
   .software-hard__points {
-    display: flex;
     text-align: left;
     height: 34px;
     padding: 0;
